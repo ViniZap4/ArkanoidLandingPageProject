@@ -1,1 +1,25 @@
-<p>home-component works!</p>
+<div class="main-container">
+  <h3>Arkanoid Game</h3>
+
+  <div class="content">
+    <div class="info">
+      <label>
+        Um Grande Remeke do classico jogo de 1986 no estilo de Block Breaker
+      </label>
+      <br>
+      <label>
+        preecha o campo ao lado para ficar atualidado com as novidades do processo de
+        desenvolvimento e lançamentos
+      </label>
+    </div>
+    <div class="form"
+      [formGroup]="form">
+      <div class="input">
+        <span>E-mail</span>
+        <input type="text"
+          formControlName="email">
+      </div>
+      <button (click)="send()">Enviar contato</button>
+    </div>
+  </div>
+</div>

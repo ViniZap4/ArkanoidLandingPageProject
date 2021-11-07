@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "ark";
+  src: url("./assets/fonts/8bit.otf");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background-color: #2a3038;
+  background-image: url("./assets/images/bg.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+input {
+  outline: none;
+  border: 0;
+  padding: 5px;
+  font-size: 18px;
+  font-family: "ark";
+  border-radius: 3px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+button {
+  outline: none;
+  background-color: #ffd724;
+  border: 0px;
+  padding: 5px;
+  border-radius: 3px;
+  font-family: "ark";
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

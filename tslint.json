@@ -1,0 +1,84 @@
+{
+  "defaultSeverity": "error",
+  "rules": {
+    "array-type": false,
+    "arrow-parens": false,
+    "deprecation": {
+      "severity": "warn"
+    },
+    "member-access": true,
+    "component-class-suffix": false,
+    "contextual-lifecycle": true,
+    "no-input-rename": false,
+    "directive-class-suffix": true,
+    "directive-selector": [true, "attribute", "ark", "camelCase"],
+    "component-selector": [true, "element", "ark", "kebab-case"],
+    "import-blacklist": [true, "rxjs/Rx"],
+    "interface-name": false,
+    "interface-over-type-literal": false,
+    "max-classes-per-file": false,
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "property-declaration",
+      "array-destructuring"
+    ],
+    "max-line-length": [true, 140],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "public-instance-field",
+          "private-static-field",
+          "private-instance-field",
+          "public-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-constructor",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "no-consecutive-blank-lines": true,
+    "no-console": {
+      "severity": "warning",
+      "options": ["log", "debug", "info", "time", "timeEnd", "trace"]
+    },
+    "no-empty": true,
+    "no-duplicate-string": true,
+    "no-non-null-assertion": true,
+    "no-redundant-jsdoc": true,
+    "no-switch-case-fall-through": true,
+    "no-var-requires": false,
+    "no-magic-numbers": true,
+    "triple-equals": true,
+    "radix": false,
+    "no-implicit-dependencies": true,
+    "no-inferrable-types": true,
+    "no-unused-variable": true,
+    "newline-per-chained-call": false,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [true, "single"],
+    "trailing-comma": false,
+    "no-boolean-literal-compare": true,
+    "no-debugger": true,
+    "no-conflicting-lifecycle": true,
+    "no-host-metadata-property": false,
+    "no-inputs-metadata-property": true,
+    "no-output-native": true,
+    "no-output-on-prefix": false,
+    "no-output-rename": true,
+    "no-outputs-metadata-property": true,
+    "template-banana-in-box": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "no-empty-source": false,
+    "selector-pseudo-element-no-unknown": [true]
+  },
+  "rulesDirectory": ["codelyzer"]
+}

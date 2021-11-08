@@ -26,4 +26,6 @@ export class HomeComponent implements OnInit {
       this.form.reset();
     }
   }
+  
 }
+

@@ -16,14 +16,14 @@ body {
   color: #fff;
   background-color: #2a3038;
   background-image: url("./assets/images/bg.png");
-  background-size: contain;
-  background-repeat: repeat-x;
+  background-size: cover;
+  // background-repeat: repeat-x;
 }
 
 input {
   outline: none;
   border: 0;
-  padding: 5px;
+  padding: 2px;
   font-size: 18px;
   font-family: "ark";
   border-radius: 3px;
@@ -31,6 +31,10 @@ input {
 
 input.ng-invalid.ng-touched {
   border: 2px solid red;
+}
+
+label{
+
 }
 
 button {
@@ -44,8 +48,79 @@ button {
   cursor: pointer;
   width: 100%;
   font-size: 20px;
+}
 
-  &:hover {
-    filter: brightness(0.8);
+
+@keyframes text-pop-up-top {
+  0% {
+    transform: translateY(50px);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(0px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.08, 0.95, 1);
+  }
+  40% {
+    transform: scale3d(0.95, 1.08, 1);
+  }
+  50% {
+    transform: scale3d(1.08, 0.95, 1);
+  }
+  65% {
+    transform: scale3d(0.98, 1.02, 1);
+  }
+  75% {
+    transform: scale3d(1.02, 0.98, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
 }

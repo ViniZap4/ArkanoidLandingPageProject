@@ -99,7 +99,7 @@
             
           }
           button{
-              &:focus, &:hover{
+              &:focus{
               animation: jello-horizontal 0.9s both;
                 
             } 

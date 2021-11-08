@@ -59,7 +59,14 @@
           display: flex;
           flex-direction: column;
           grid-auto-flow: 5px;
-         
+          label{
+            .right{
+              display: inline;
+            }
+            .bottom{
+              display: none;
+            }
+          }
           
         }
   
@@ -102,6 +109,17 @@
         }
         @media screen and (max-width: 768px) {
           flex-direction: column;
+          .info {
+          
+            label{
+              .right{
+                display: none;
+              }
+              .bottom{
+                display: inline;
+              }
+            }
+          }  
         }
       }
 
@@ -113,12 +131,13 @@
       max-height: unset;
       overflow: auto;
       width: 90%;
-      margin: 0px;
+      margin: 10vh 0px ;
       gap: 20px;
     }
   }
   @media screen and (max-width: 768px) {
     width: unset;
     height: unset;
+    
   }
 }

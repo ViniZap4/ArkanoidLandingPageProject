@@ -13,10 +13,11 @@
     border-radius: 8px;
     position: relative;
     margin: auto 10%;
+    gap: 30px;
     width: 100%;
     margin-right: 10%;
-    max-width: 650px;
-    height: 100%;
+    max-width: 750px;
+    height: fit-content;
     max-height: 330px;
     display: flex;
     flex-direction: column;
@@ -29,12 +30,9 @@
       font-size: 40px;
       font-family: "ark";
       user-select: none;
-      animation: text-pop-up-top 0.9s 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
     }
-    .description{
+    .description {
       font-size: 18px;
-     
     }
 
     .content {
@@ -43,12 +41,39 @@
       gap: 20px;
       user-select: none;
       font-family: "ark";
-      margin: auto;
 
-      
-      .contact{
+      .contact {
         display: flex;
-        
+        flex-direction: column;
+        align-items: baseline;
+        gap: 15px;
+
+        .buttons {
+          display: flex;
+          gap: 10px;
+          width: 100%;
+          justify-content: flex-end;
+          a {
+            text-decoration: none;
+            button {
+              padding: 10px;
+            }
+            .download {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              .icon {
+                mask-image: url("./../../../assets/images/windows.svg");
+                mask-repeat: no-repeat;
+                mask-size: contain;
+                background-color: white;
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+
         .info {
           display: flex;
           justify-content: center;
@@ -59,85 +84,72 @@
           display: flex;
           flex-direction: column;
           grid-auto-flow: 5px;
-          label{
-            .right{
+          label {
+            .right {
               display: inline;
             }
-            .bottom{
+            .bottom {
               display: none;
             }
           }
-          
         }
-  
+
         .form {
           font-family: "ark";
           min-width: 280px;
           display: flex;
           gap: 15px;
           flex-direction: column;
-  
+
           .input {
             width: 100%;
             display: flex;
             flex-direction: column;
             gap: 5px;
-            
-  
+
             input {
               width: 96%;
               border: 3px solid #ffd72400;
 
-             	&:focus{
+              &:focus {
                 animation: jello-horizontal 0.9s both;
-                border: 3px solid #FFD724;
-                color: #FFD724;
-
-               }
-
+                border: 3px solid #ffd724;
+                color: #ffd724;
+              }
             }
-            
           }
-          button{
-              &:focus{
+          button {
+            &:focus {
               animation: jello-horizontal 0.9s both;
-                
-            } 
-
+            }
           }
-          
         }
         @media screen and (max-width: 768px) {
           flex-direction: column;
           .info {
-          
-            label{
-              .right{
+            label {
+              .right {
                 display: none;
               }
-              .bottom{
+              .bottom {
                 display: inline;
               }
             }
-          }  
+          }
         }
       }
-
-
-     
     }
     @media screen and (max-width: 768px) {
       max-width: unset;
       max-height: unset;
       overflow: auto;
       width: 90%;
-      margin: 10vh 0px ;
+      margin: 10vh 0px;
       gap: 20px;
     }
   }
   @media screen and (max-width: 768px) {
     width: unset;
     height: unset;
-    
   }
 }
